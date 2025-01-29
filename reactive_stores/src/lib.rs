@@ -676,6 +676,7 @@ where
     T: 'static,
 {
     fn dispose(self) {
+        tracing::info!("Disposing store");
         self.inner.dispose();
     }
 }

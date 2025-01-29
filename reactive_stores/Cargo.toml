@@ -17,6 +17,7 @@ paste = "1.0"
 reactive_graph = { workspace = true }
 rustc-hash = "2.0"
 reactive_stores_macro = { workspace = true }
+tracing = { version = "0.1.41" }
 
 [dev-dependencies]
 tokio = { version = "1.41", features = ["rt-multi-thread", "macros"] }
@@ -27,3 +28,4 @@ leptos = { path = "../leptos", features = ["csr"] }
 
 [lints.rust]
 unexpected_cfgs = { level = "warn", check-cfg = ['cfg(leptos_debuginfo)'] }
+
